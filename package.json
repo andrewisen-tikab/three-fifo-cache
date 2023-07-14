@@ -1,0 +1,23 @@
+{
+    "name": "three-fifo-cache",
+    "version": "0.0.0",
+    "type": "module",
+    "main": "dist/three-fifo-cache.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "build:example": "tsc && vite build && vite build -c vite.config.example.ts",
+        "preview": "vite preview",
+        "prettier": "npx prettier --write ./src && npx prettier --write ./example",
+        "ts": "tsc"
+    },
+    "devDependencies": {
+        "@types/three": "^0.154.0",
+        "prettier": "^3.0.0",
+        "three": "^0.154.0",
+        "typescript": "^5.0.2",
+        "vite": "^4.4.0",
+        "vite-plugin-dts": "^3.2.0"
+    }
+}
