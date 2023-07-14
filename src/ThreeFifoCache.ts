@@ -155,4 +155,13 @@ export default class ThreeFIFOCache {
     flush(): void {
         this.init();
     }
+
+    /**
+     * @deprecated WIP
+     * @param maxItems
+     */
+    public setMaxItems(maxItems: number): void {
+        if (maxItems <= 0) throw new Error('maxItems must be greater than 0');
+        this.maxItems = maxItems;
+    }
 }
