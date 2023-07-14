@@ -70,6 +70,12 @@ Or, a live version is available at:
 
 [https://andrewisen-tikab.github.io/three-fifo-cache/example/](https://andrewisen-tikab.github.io/three-fifo-cache/example/)
 
+## Docs
+
+Auto-generated docs can be found here:
+
+[https://andrewisen-tikab.github.io/three-fifo-cache/docs/](https://andrewisen-tikab.github.io/three-fifo-cache/docs/)
+
 ## Status
 
 This is a work in progress. It has not been tested in production code.
