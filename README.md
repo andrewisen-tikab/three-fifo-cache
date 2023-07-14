@@ -14,6 +14,23 @@ or
 yarn add three-fifo-cache
 ```
 
+## Is this useful?
+
+This class is useful in very specific situations.
+For most everyday usage, a simple traversal of the scene graph is enough.
+
+```ts
+let object = null;
+scene.traverse((child) => {
+    if (child.uuid === 'my-uuid') {
+        object = child;
+    }
+});
+```
+
+However, if you have a **large scene** graph with **multiple generations**
+(children, grand-children, grand-grand-children, etc.) and you need to access a specific object multiple times, then this class can be useful.
+
 ## Usage
 
 First, import the module and setup the cache.
@@ -52,3 +69,7 @@ A simple example is available in the `example` folder.
 Or, a live version is available at:
 
 [https://andrewisen-tikab.github.io/three-fifo-cache/example/](https://andrewisen-tikab.github.io/three-fifo-cache/example/)
+
+## Status
+
+This is a work in progress. It has not been tested in production code.
