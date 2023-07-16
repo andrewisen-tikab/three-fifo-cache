@@ -1,6 +1,6 @@
 {
     "name": "three-fifo-cache",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "type": "module",
     "main": "dist/three-fifo-cache.js",
     "license": "MIT",
